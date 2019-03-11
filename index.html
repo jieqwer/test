@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>思潮网络</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid topbar">
+        <span class="bar" id="bar"></span>
+        <aside class="barlist">
+            <div class="gui">
+                <h1>
+                    <img src="./images//images/icon1_03.png" alt="">
+                </h1>
+                <ul class="wit">
+                    <li class="wit1">
+                        <div>
+                            <h3>首页</h3>
+                        </div>
+                    </li>
+                    <li class="wit1">
+                        <div>
+                            <h3>产品服务</h3>
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <ul>
+                                    <li>网站托管</li>
+                                    <li>全网推广</li>
+                                    <li>网站排名</li>
+                                    <li>竞价托管</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="wit1">
+                        <div>
+                            <h3>服务评价</h3>
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>网站托管</li>
+                                <li>全网推广</li>
+                                <li>网站排名</li>
+                                <li>竞价托管</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="wit1">
+                        <div>
+                            <h3>服务评价</h3>
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>网站托管</li>
+                                <li>全网推广</li>
+                                <li>网站排名</li>
+                                <li>竞价托管</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="wit1">
+                        <div>
+                            <h3>服务评价</h3>
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>网站托管</li>
+                                <li>全网推广</li>
+                                <li>网站排名</li>
+                                <li>竞价托管</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="wit1">
+                        <div>
+                            <h3>服务评价</h3>
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>网站托管</li>
+                                <li>全网推广</li>
+                                <li>网站排名</li>
+                                <li>竞价托管</li>
+                            </ul>
+                        </div>
+                    </li>
+
+        </aside>
+        <div class="title">
+            <p>思潮<span class="c59">网络</span>营销<span class="c59">托管</span>
+            </p>
+            <p> 让传统企业<span class="c59">网络营销</span>更简单</p>
+        </div>
+        <div class="liji">
+            立即体验
+        </div>
+
+        <div class="listfoot">
+            <div>十年技术沉淀</div>
+            <div>十年技术沉淀</div>
+            <div>十年技术沉淀</div>
+            <div>十年技术沉淀</div>
+        </div>
+        </div>
+
+        <div class="container-fluid ">
+
+            <div class="titTop">
+                你的企业是否遇到这样的情况
+            </div>
+
+            <div class="ques">
+                <div>
+                    <span></span>
+                    <span>资源不稳</span>
+                </div>
+                <div>
+                    <span></span>
+                    <span>资源不稳</span>
+                </div>
+                <div>
+                    <span></span>
+                    <span>资源不稳</span>
+                </div>
+                <div>
+                    <span></span>
+                    <span>资源不稳</span>
+                </div>
+                <div>
+                    <span></span>
+                    <span>资源不稳</span>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script>
+    $(document).on('click', function (e) {
+        if ($(".barlist").css("right") == "0px") {
+            $(".barlist").css("right", "-70%");
+            $("#bar").fadeIn(500);
+        }
+    });
+    $('.barlist').on('click', function (e) {
+        e.stopPropagation();
+    });
+    $("#bar").click(function () {
+        $(".barlist").css("right", 0);
+        $(this).fadeOut(500);
+    })
+    $(".wit li").click(function () {
+        if ($(this).css("height") == "53px") {
+            $(".wit li").css("height", "53px")
+            $(this).css("height", "auto")
+            $(".wit li div:nth-of-type(1) span").html("+");
+            $(this).children().find('span').html("﹀")
+        } else {
+            $(this).css("height", "53px")
+            $(this).children().find('span').html("+")
+        }
+    });
+</script>
+
+</html>

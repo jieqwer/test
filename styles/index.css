@@ -1,0 +1,199 @@
+.container-fluid{
+    overflow-x:hidden; 
+}
+.topbar{
+    height: 663px;
+    background: url(../images//source_01.jpg) no-repeat center;
+    background-size: 100%;
+    position: relative;
+    
+}
+.bar{
+    position: absolute;
+    right: 1rem;
+    background: url(../images/ico.png) -52px 0;
+    width: 50px;
+    height: 50px;
+    top: 1rem;
+    z-index: 10;
+}
+.barlist{
+    width: 70%;
+    height:-webkit-fill-available;
+    background:#202123;
+    position: absolute;
+    right: -70%;
+    z-index: 9;
+    transition: all 0.5s ease-out;
+    overflow: hidden;
+}
+.gui h1{
+    margin: 0;
+    border-bottom:1px solid #454545; 
+}
+.gui img{
+    width: 60%;
+    height: 80%;
+    margin: 10px 20px;
+}
+.wit{
+    width: 100%;
+}
+.wit>li{
+    height: 53px;
+    border-bottom:1px solid #454545; 
+    color: #7c7c7c;
+    text-align: center;
+    line-height: 53px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+.wit1 div{
+    position: relative;
+}
+.wit1 h3{
+    font-size: 20px !important
+}
+.wit1 div> span{
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: -60%; 
+}
+.wit1 div:nth-of-type(2) li:hover{
+    background: #ccc;
+}
+.title{
+    margin-top: 28rem;
+}
+.title p:nth-of-type(1){
+    font-size: 36px;
+    width: 84%;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #ccc;
+    margin: 0 8%;
+}
+.title p:nth-of-type(2){
+    font-size: 18px;
+    width: 84%;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    margin: 0 8%;
+}
+.c59{
+    color:#59daca;
+    display: inline;
+}
+.liji{
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 20px auto;
+    border: 1px solid #59daca;
+    color: #fff;
+    border-radius: 6px;
+}
+.listfoot{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.listfoot div{
+    width: 46%;
+    height: 40px;
+    color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 40px;
+}
+.titTop{
+    margin:30px 10px; 
+    font-size: 18px;
+    text-align: center;
+    border-bottom:1px solid #ccc; 
+    position: relative;
+    padding: 6px 0;
+    color: #525252;
+}
+.titTop::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    left: 50%;
+    background: #59daca;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: -2px;
+}
+
+.ques{
+    width: 90%;
+    margin: 100px auto;
+    position: relative;
+    height: 400px;
+}
+.ques div {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background: #e4e4e4;
+    transform: rotate(45deg);
+    position: absolute;
+
+}
+.ques div span:nth-of-type(1){
+    height: 90px;
+    width: 90px;
+    background: url(../images/ico.png)  no-repeat;
+    transform: rotate(-45deg);
+}
+.ques div span:nth-of-type(2){
+    width: 166px;
+    transform: rotate(-45deg);
+    margin-top: -14px;
+}
+.ques div:nth-of-type(1) span:nth-of-type(1){
+    background-position:-56px -52px;
+}
+.ques div:nth-of-type(1) {
+}
+
+.ques div:nth-of-type(2) span:nth-of-type(1){
+    background-position:-56px -144px;
+}
+.ques div:nth-of-type(2) {
+    right: 0;
+    top: 0;
+}
+
+.ques div:nth-of-type(3) span:nth-of-type(1){
+    background-position:-56px -250px;
+}
+.ques div:nth-of-type(3) {
+    left:  50%;;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -100px;
+}
+
+.ques div:nth-of-type(4) span:nth-of-type(1){
+    background-position:-56px -331px;
+}
+.ques div:nth-of-type(4) {
+   left: 0px;
+    top: 200px;
+}
+.ques div:nth-of-type(5) span:nth-of-type(1){
+    background-position:-56px -52px;
+}
+.ques div:nth-of-type(5) {
+    right: 0px;
+    top: 200px;
+}
